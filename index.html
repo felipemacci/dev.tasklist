@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>dev.tasklist</title>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link href="assets/styles/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <button onclick="App.reset()" title="Resetar tarefas">
+                        <i class="uil uil-redo"></i>
+                    </button>
+
+                    <button class="theme_Switcher" onclick="ThemeSwitcher.toggle()" title="Alterar tema">
+                        <i class="uil uil-moon"></i>
+                    </button>
+                </nav>
+    
+                <div class="logo">
+                    <h1>dev.tasklist</h1>
+                    <i class="uil uil-clipboard-notes"></i>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section id="analyze">
+                    <div id="waiting" class="card">
+                        <h3>
+                            <span>Em aberto:</span>
+                            <img src="assets/images/time.svg" alt="ícone relógio" />
+                        </h3>
+    
+                        <p>0 Tarefa(s).</p>
+                    </div>
+                    <div id="complete" class="card card--time">
+                        <h3>
+                            <span>Concluídas:</span>
+                            <img src="assets/images/check.svg" alt="ícone confere" />
+                        </h3>
+    
+                        <p>0 Tarefa(s).</p>
+                    </div>
+                </section>
+
+                <section id="tasks">
+                    <div class="card card--new" onclick="Modal.toggle()">
+                        <i class="uil uil-plus"></i>
+                        <p>Adicionar nova tarefa</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                Felipe Macci - Todos os direitos reservados.
+            </div>
+        </footer>
+
+        <button onclick="Modal.toggle()">
+            <i class="uil uil-plus"></i>
+        </button>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <div class="modal-content">
+                    <header>
+                        <h2>Registrar Tarefa</h2>
+                    </header>
+    
+                    <main>
+                        <form action="">
+                            <div class="input-group">
+                                <label for="title">
+                                    <p>Título</p>
+                                </label>
+    
+                                <input type="text" id="title" name="title" maxlength="20" />
+                            </div>
+    
+                            <div class="input-group">
+                                <label for="description">
+                                    <p>Descrição</p>
+                                </label>
+                                
+                                <input type="text" id="description" name="description" maxlength="72" />
+                            </div>
+    
+                            <div class="input-group">
+                                <label for="time">
+                                    <p>Concluir até</p>
+                                </label>
+                                <input type="datetime-local" id="time" name="time" />
+                            </div>
+    
+                            <div class="input-group actions">
+                                <button type="button" class="cancel" onclick="Modal.toggle()">Cancelar</button>
+                                <button type="submit" onclick="Form.submit(event)">Registrar</button>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/scripts/index.js"></script>
+    </body>
+</html>
