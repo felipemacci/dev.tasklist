@@ -35,26 +35,26 @@
                 <section id="analyze">
                     <div id="waiting" class="card">
                         <h3>
-                            <span>Em aberto:</span>
-                            <img src="assets/images/time.svg" alt="ícone relógio" />
+                            <span>Open:</span>
+                            <img src="assets/images/time.svg" alt="clock icon" />
                         </h3>
     
-                        <p>0 Tarefa(s).</p>
+                        <p>0 Task(s).</p>
                     </div>
                     <div id="complete" class="card card--time">
                         <h3>
-                            <span>Concluídas:</span>
-                            <img src="assets/images/check.svg" alt="ícone confere" />
+                            <span>Completed:</span>
+                            <img src="assets/images/check.svg" alt="check icon" />
                         </h3>
     
-                        <p>0 Tarefa(s).</p>
+                        <p>0 Task(s).</p>
                     </div>
                 </section>
 
                 <section id="tasks">
                     <div class="card card--new" onclick="Modal.toggle()">
                         <i class="uil uil-plus"></i>
-                        <p>Adicionar nova tarefa</p>
+                        <p>Add new task</p>
                     </div>
                 </section>
             </div>
@@ -62,7 +62,7 @@
 
         <footer>
             <div class="container">
-                Felipe Macci - Todos os direitos reservados.
+                Felipe Macci - All rights reserved.
             </div>
         </footer>
 
@@ -74,14 +74,14 @@
             <div class="modal">
                 <div class="modal-content">
                     <header>
-                        <h2>Registrar Tarefa</h2>
+                        <h2>Register Task</h2>
                     </header>
     
                     <main>
                         <form action="">
                             <div class="input-group">
                                 <label for="title">
-                                    <p>Título</p>
+                                    <p>Title</p>
                                 </label>
     
                                 <input type="text" id="title" name="title" maxlength="20" />
@@ -89,7 +89,7 @@
     
                             <div class="input-group">
                                 <label for="description">
-                                    <p>Descrição</p>
+                                    <p>Description</p>
                                 </label>
                                 
                                 <input type="text" id="description" name="description" maxlength="72" />
@@ -97,14 +97,14 @@
     
                             <div class="input-group">
                                 <label for="time">
-                                    <p>Concluir até</p>
+                                    <p>Complete by</p>
                                 </label>
                                 <input type="datetime-local" id="time" name="time" />
                             </div>
     
                             <div class="input-group actions">
-                                <button type="button" class="cancel" onclick="Modal.toggle()">Cancelar</button>
-                                <button type="submit" onclick="Form.submit(event)">Registrar</button>
+                                <button type="button" class="cancel" onclick="Modal.toggle()">Cancel</button>
+                                <button type="submit" onclick="Form.submit(event)">Register</button>
                             </div>
                         </form>
                     </main>

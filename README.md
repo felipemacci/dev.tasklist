@@ -1,26 +1,26 @@
 <h1 align="center">DEV.TASKLIST 📜</h1>
-<h3 align="center">CRIE UMA LISTA DE TAREFAS ORGANIZADA</h3>
+<h3 align="center">CREATE AN ORGANIZED TASK LIST</h3>
 
 <br/>
 
 <p align="center">
-    <img width="800px" src="./.github/demonstration.png" alt="Imagem de demonstração">
+    <img width="800px" src="./.github/demonstration.png" alt="Demo Image">
 </p>
 
 <br />
 
-#### NOTAS DE VERSÃO: V1.0.0:
-- Primeira versão do projeto 🎉
-- Adicione tarefas e seus prazos
-- Apague-as quando quiser
-- Marque-as como concluído
-- Guarde-as no local storage
-- Mude o tema para noturno
-- Adaptável a qualquer tipo de tela
+#### RELEASE NOTES: V1.0.0:
+- First version of the project 🎉
+- Add tasks and their deadlines
+- Erase them whenever you want
+- Mark them as complete
+- Store them in local storage
+- Change the theme to night
+- Adaptable to any type of screen
 
 <br />
 
-#### TECNOLOGIAS:
+#### TECHNOLOGIES:
 - HTML 📄
 - CSS 🎨
 - JAVASCRIPT 💻
