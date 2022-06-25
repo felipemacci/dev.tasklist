@@ -72,10 +72,10 @@ const Tasks = {
     },
 
     calculate() {
-        const waiting = Tasks.all.length + ' Tarefa(s).'
+        const waiting = Tasks.all.length + ' Task(s).'
         localStorage.setItem('dev.tasklist:waiting', waiting)
 
-        const completed = Tasks.completed.length + ' Tarefa(s).'
+        const completed = Tasks.completed.length + ' Task(s).'
         localStorage.setItem('dev.tasklist:completed', completed)
     },
 
@@ -95,8 +95,8 @@ const TaskView = {
         <div id="${task.id}" class="card">
             <header>
                 <nav class="navbar">
-                    <button class="complete_Task" title="Concluir tarefa"><i class="uil uil-check" onclick="Tasks.conclude(${task.id})"></i></button>
-                    <button class="remove_Task" title="Excluir tarefa" onclick="Tasks.remove(${task.id})"><i class="uil uil-trash-alt"></i></button>
+                    <button class="complete_Task" title="Complete task"><i class="uil uil-check" onclick="Tasks.conclude(${task.id})"></i></button>
+                    <button class="remove_Task" title="Remove task" onclick="Tasks.remove(${task.id})"><i class="uil uil-trash-alt"></i></button>
                 </nav>
             </header> 
 
@@ -108,7 +108,7 @@ const TaskView = {
             <footer>
                 <p>
                     <i class="uil uil-clock"></i>
-                    <span>Para ${task.date[0]} às ${task.date[1]}</span>
+                    <span>For ${task.date[0]} at ${task.date[1]}</span>
                 </p>
             </footer>
         </div>
@@ -167,7 +167,7 @@ const Form = {
         let { title, description, date } = Form.getValues()
 
         if(title === "" || description === "" || date === "")
-            throw new Error("Por favor, preencha todos os campos!")
+            throw new Error("Please fill in all fields!")
     },
 
     formatValues() {

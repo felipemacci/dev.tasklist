@@ -4,7 +4,7 @@
 <br/>
 
 <p align="center">
-    <img width="800px" src="./.github/demonstration.png" alt="Demo Image">
+    <img width="800px" src="./.github/demo.png" alt="Demo Image">
 </p>
 
 <br />
